@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Information about Covid-19 l For Triamudomsuksanomklao School Project.
+    </title>
+    <link rel="shortcut icon" href="./static/images/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- CSS -->
+    <link rel="stylesheet" href="static/css/allin.css">
+    <!--Facebook Chat-->
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <div class="elfsight-app-5e8727ff-c5e2-4a01-9a40-ef83bb3182f3"></div>
+    
+    <!--Ionicon install-->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        
+</head>
+
+<body class="loading">
+
+    <style>
+        .link_href {
+            color: rgb(42, 42, 250);
+        }
+        .link_href:hover {
+            color: rgb(89, 102, 216);
+        }   
+    </style>
+    <!-- top nav -->
+    <div class="nav-wrapper">
+        <div class="container">
+            <div class="nav">
+                <a href="" class="logo">
+                    C<i class="bx bxs-virus-block bx-tada"></i>VID TRACKER
+                </a>
+                <div class="nav">
+                    <a href="index.html" class="link_href">
+                        <h3><strong>Home</strong></h3>
+                    </a>
+                    <a href="secondpage.html" class="link_href" style="padding-left: 15pt;">
+                        <h3><strong>What's Covid-19?</strong></h3>
+                    </a>
+                    <a href="thirdpage.html" class="link_href" style="padding-left: 15pt;">
+                        <h3><strong>How to prevent?</strong></h3>
+                    </a>
+                    <a href="aboutus.html" class="link_href" style="padding-left: 15pt;">
+                        <h3><strong>About us</strong></h3>
+                    </a>
+                    <a href="reference.html" class="link_href" style="padding-left: 15pt;">
+                        <h3><strong>Reference</strong></h3>
+                    </a>
+                    <a href="source-api.html" class="link_href" style="padding-left: 15pt;">
+                        <h3><strong>Source Code and API</strong></h3>
+                    </a>
+                </div>
+                <div class="darkmode-switch" id="darkmode-switch">
+                    <span>
+                        <i class="bx bxs-moon"></i>
+                        <i class="bx bxs-sun"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <!-- end top nav -->
+    <div class="box">
+        <header>
+            <div>
+                <img src="image/COVID-19.png" style="width: 100%;">
+                </div>
+            </div>
+        </header>
+    </div>
+
+
+    <!-- main content -->
+    <div class="content">
+        <div class="container">
+            <!-- country select -->
+            <div class="row">
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="box">
+                        <div class="country-select" id="country-select">
+                            <div class="country-select-toggle" id="country-select-toggle">
+                                <span>
+                                    Global
+                                </span>
+                                <i class="bx bx-chevron-down"></i>
+                            </div>
+                            <div class="country-select-list" id="country-select-list">
+                                <input type="text" placeholder="Search country name">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end country select -->
+
+            <!-- tracking information -->
+            <div class="row">
+                <!-- left content -->
+                <div class="col-8 col-md-12 col-sm-12">
+                    <div class="row">
+                        <!-- counter -->
+                        <div class="col-4 col-md-4 col-sm-12">
+                            <div class="box box-hover">
+                                <div class="count count-confirmed">
+                                    <div class="count-icon">
+                                        <i class="bx bxs-virus"></i>
+                                    </div>
+                                    <div class="count-info">
+                                        <h5 id="confirmed-total">123,456,789</h5>
+                                        <span>confirmed</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- counter -->
+                        <!-- counter -->
+                        <div class="col-4 col-md-4 col-sm-12">
+                            <div class="box box-hover">
+                                <div class="count count-recovered">
+                                    <div class="count-icon">
+                                        <i class="bx bxs-smile"></i>
+                                    </div>
+                                    <div class="count-info">
+                                        <h5 id="recovered-total">123,456,789</h5>
+                                        <span>recovered</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- counter -->
+                        <!-- counter -->
+                        <div class="col-4 col-md-4 col-sm-12">
+                            <div class="box box-hover">
+                                <div class="count count-death">
+                                    <div class="count-icon">
+                                        <i class="bx bxs-sad"></i>
+                                    </div>
+                                    <div class="count-info">
+                                        <h5 id="death-total">123,456,789</h5>
+                                        <span>deaths</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- counter -->
+
+                        <!-- all time chart -->
+                        <div class="col-12">
+                            <div class="box">
+                                <div class="box-header">
+                                    all times
+                                </div>
+                                <div class="box-body">
+                                    <div id="all-time-chart"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end all time chart -->
+                    </div>
+                </div>
+                <!-- end left content -->
+
+                <!-- right content -->
+                <div class="col-4 col-md-12 col-sm-12">
+                    <!-- 30 days chart -->
+                    <div class="box">
+                        <div class="box-header">
+                            last 30 days
+                        </div>
+                        <div class="box-body">
+                            <div id="days-chart"></div>
+                        </div>
+                    </div>
+                    <!-- end 30 days chart -->
+
+                    <!-- recovery rate chart -->
+                    <div class="box">
+                        <div class="box-header">
+                            recovery rate
+                        </div>
+                        <div class="box-body">
+                            <div id="recover-rate-chart"></div>
+                        </div>
+                    </div>
+                    <!-- end recovery rate chart -->
+
+                    <!-- top country affected -->
+                    <div class="box">
+                        <div class="box-header">
+                            top countries affected
+                        </div>
+                        <div class="box-body">
+                            <table class="table-countries" id="table-countries">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Country
+                                        </th>
+                                        <th>Confirmed</th>
+                                        <th>Recovered</th>
+                                        <th>Deaths</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                        <td>test</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- end top country affected -->
+                </div>
+                <!-- end right content -->
+            </div>
+            <!-- end tracking information -->
+        </div>
+    </div>
+    <!-- end main content -->
+
+    <style>
+        hr {
+            width: 1220pt;
+            color: black;
+            background-color: black;
+            height: 1px;
+            border-width: 0pt;
+        }   
+        h1 {
+            font-size: 40pt;
+        }
+        h2 {
+            font-size: 30pt;
+        }
+        h3 {
+            font-size: 20pt;
+        }
+        p {
+            font-size: 15pt;
+        }   
+        ul.no-bullets {
+            list-style-type: none; 
+            padding: 0; 
+            margin: 0;  
+        }                 
+    </style>
+
+    <div class="box" class="w3-border">
+        <div class="row">
+            <div class="col-sm-6">
+                <div style="padding-left: 15pt;padding-top: 15pt;">
+                    <img src="https://www.w3schools.com/w3css/img_avatar3.png" width="150" class="w3-border" style="border-radius: 50%;">
+                </div>
+                <p style="padding-left: 15pt;padding-top: 15pt;"><strong>Address: </strong>25/12 Serithai Road, Serithai 19, <br>Bueng Kum District, Klong Kum <br>Bangkok 10240</p>
+            </div>
+            <div class="col-sm-6">
+                <div class="container" style="padding-left: 30pt;">
+                    <h1><strong>Information</strong></h1>
+                    <ul class="no-bullets" style="padding-top: 30pt;">
+                        <li style="padding-top: 5pt;"><strong><p><a href="index.html">Home</a></p></strong></li>
+                        <li style="padding-top: 5pt;"><strong><p><a href="secondpage.html">What's COVID-19?</a></p></strong></li>
+                        <li style="padding-top: 5pt;"><strong><p><a href="thirdpage.html">How to prevent?</a></p></strong></li>               
+                        <li style="padding-top: 5pt;"><strong><p><a href="fourthpage.html">Covid-19 Tracker</a></p></strong></li>
+                        <li style="padding-top: 5pt;"><strong><p><a href="aboutus.html">About us</a></p></strong></li>
+                        <li style="padding-top: 5pt;"><strong><p><a href="reference.html">Reference</a></p></strong></li>
+                        <li style="padding-top: 5pt;"><strong><p><a href="source-api.html">Source Code and API</a></p></strong></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="container" style="padding-left: 30pt;">
+                    <h1><strong>Contact</strong></h1>
+                    <p style="padding-top: 15pt;"><strong>E-mail: </strong>peempeem2557@hotmail.com</p>
+                    <p style="padding-top: 5pt;"><strong>Telephone: </strong>+66 91-996-1807</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.051481304582!2d100.65525981512212!3d13.77576900044838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d6229c30f5637%3A0x12a658d3c44177c7!2zMjUvMTIg4LiWLiDguYDguKrguKPguLXguYTguJfguKIg4LmB4LiC4Lin4LiHIOC4hOC4peC4reC4h-C4geC4uOC5iOC4oSDguYDguILguJUg4Lia4Li24LiH4LiB4Li44LmI4LihIOC4geC4o-C4uOC4h-C5gOC4l-C4nuC4oeC4q-C4suC4meC4hOC4oyAxMDIzMA!5e0!3m2!1sth!2sth!4v1621474450603!5m2!1sth!2sth" width="300" height="225" style="border:0;padding-top: 15pt;" allowfullscreen="" loading="lazy"></iframe>                    
+                </div>
+            </div>
+            <div class="col-sm-12" style="padding-top: 40pt;text-align: center;padding-left: 30pt;">
+                <div>
+                    <hr style="text-align: center;">
+                </div>
+                <div class="sub-content" style="padding-left: 15pt;">
+                    <div style="padding-top: 15pt;">
+                        <img src="image/tools-removebg-preview.png" width="50">
+                    </div>
+                    <p style="padding-top: 5pt;">Web Designed by: <strong>Kanokphan Sirithienthong</strong></p>
+                    <p>Copyright &copy; 2021</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- loader -->
+    <div class="loader">
+        <i class="bx bxs-virus bx-spin"></i>
+    </div>
+    <!-- end loader -->
+
+    <!-- apexchart -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <!-- JS -->
+    <script src="./static/js/fetchApi.js"></script>
+    <script src="./static/js/covidApi.js"></script>
+    <script src="./static/js/app.js"></script>
+</body>
+
+</html>
