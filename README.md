@@ -1,7 +1,10 @@
 # Covid-19-API-Tracking-Website-Template
+
+Live demo at: https://tun-project.000webhostapp.com/
+
 Feel free to download and use it at your own risk.
 
-All so thanks to this man for the tutorial on his channel
+Also thanks to this man for the tutorial on his channel
 
 https://github.com/trananhtuat
 
