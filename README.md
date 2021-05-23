@@ -11,3 +11,6 @@ https://github.com/trananhtuat
 His Youtube channel 
 
 https://www.youtube.com/c/TuatTranAnh
+
+**This website reponse perfectly on Window with full screen since it's for a School project 
+if the teacher accepts this project i'll make it responses for mobile and others too sorry.
